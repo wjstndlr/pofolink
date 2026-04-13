@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mv poFoLink/prd.md ./prd_backup.md)",
+      "Bash(mv poFoLink/checklist.md ./checklist_backup.md)",
+      "Bash(rm -rf poFoLink)",
+      "Bash(cp poFoLink/prd.md ./prd_backup.md)",
+      "Bash(cp poFoLink/checklist.md ./checklist_backup.md)",
+      "Bash(rm poFoLink/prd.md poFoLink/checklist.md)",
+      "Bash(npx create-next-app@14 poFoLink --typescript --tailwind --app --src-dir --use-npm --eslint --no-import-alias)",
+      "Bash(rmdir poFoLink)",
+      "Bash(npx create-next-app@14 pofolink --typescript --tailwind --app --src-dir --use-npm --eslint --no-import-alias)",
+      "Bash(npx create-next-app@14 pofolink-temp --typescript --tailwind --app --src-dir --use-npm --eslint --no-import-alias)",
+      "Bash(cp -r pofolink-temp/* poFoLink/)",
+      "Bash(cp pofolink-temp/.* poFoLink/)",
+      "Bash(rm -rf pofolink-temp)",
+      "Bash(rm -rf poFoLink/node_modules poFoLink/next.config.mjs poFoLink/next-env.d.ts)",
+      "Bash(npx create-next-app@14 pofolink-app --typescript --tailwind --app --src-dir --use-npm --eslint --no-import-alias)",
+      "Bash(shopt -s dotglob)",
+      "Bash(cp -r pofolink-app/* poFoLink/)",
+      "Bash(cp -r pofolink-app/.eslintrc.json poFoLink/)",
+      "Bash(cp -r pofolink-app/.gitignore poFoLink/)",
+      "Bash(npm install:*)",
+      "Bash(npx shadcn-ui@latest add button card input textarea label badge separator scroll-area accordion dialog tabs tooltip progress popover --yes)",
+      "Bash(npx shadcn@latest add button card input textarea label badge separator scroll-area accordion dialog tabs tooltip progress popover --yes)",
+      "Bash(npx shadcn@latest add resizable --yes)",
+      "Bash(npx next:*)",
+      "Bash(npm ls:*)",
+      "Bash(node -e \"const l = require\\(''lucide-react''\\); console.log\\(typeof l.Youtube\\)\")",
+      "Bash(node -e \"const p = require\\(''pdf-parse/package.json''\\); console.log\\(p.version\\); console.log\\(JSON.stringify\\(p.exports, null, 2\\)\\)\")",
+      "Bash(node -e \"import\\(''pdf-parse''\\).then\\(m => console.log\\(Object.keys\\(m\\)\\)\\)\")",
+      "Bash(node -e \"import\\(''pdf-parse''\\).then\\(m => { const p = new m.PDFParse\\(''test''\\); console.log\\(Object.getOwnPropertyNames\\(m.PDFParse.prototype\\)\\); }\\)\")",
+      "Bash(node -e \"import\\(''pdf-parse''\\).then\\(async m => { const fs = await import\\(''fs''\\); const buf = Buffer.alloc\\(10\\); const p = new m.PDFParse\\({}\\); console.log\\(Object.getOwnPropertyNames\\(m.PDFParse.prototype\\)\\); }\\)\")",
+      "Bash(node --input-type=module -e \":*)",
+      "Bash(node -e \"import\\(''react-resizable-panels''\\).then\\(m => console.log\\(Object.keys\\(m\\)\\)\\)\")",
+      "Bash(node -e \"import\\(''lucide-react''\\).then\\(m => { console.log\\(''Github:'', !!m.Github, ''GithubIcon:'', !!m.GithubIcon, ''GitHubLogoIcon:'', !!m.GitHubLogoIcon\\); Object.keys\\(m\\).filter\\(k => k.toLowerCase\\(\\).includes\\(''git''\\)\\).forEach\\(k => console.log\\(k\\)\\); }\\)\")",
+      "Bash(curl -s \"https://generativelanguage.googleapis.com/v1beta/models?key=AIzaSyAAco36AWnaL-Wc6776srSJrTbxYqAtcBs\")",
+      "Bash(gh repo:*)",
+      "Bash(curl -s \"https://nnhohlieedhysbuwpdro.supabase.co/rest/v1/portfolios?select=username,data\" -H \"apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5uaG9obGllZWRoeXNidXdwZHJvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ5NTY1NjYsImV4cCI6MjA5MDUzMjU2Nn0.GWVPpdOZwP38Z-l6wzS0rUskHq-Tl9-yc_hIR1eZpvA\" -H \"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5uaG9obGllZWRoeXNidXdwZHJvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ5NTY1NjYsImV4cCI6MjA5MDUzMjU2Nn0.GWVPpdOZwP38Z-l6wzS0rUskHq-Tl9-yc_hIR1eZpvA\")",
+      "Bash(python3 -c \"import sys,json; data=json.load\\(sys.stdin\\); [print\\(d[''''username''''], [p.get\\(''''slug'''',''''NO SLUG''''\\) for p in d[''''data''''].get\\(''''projects'''',[]\\)]\\) for d in data]\")"
+    ]
+  }
+}
